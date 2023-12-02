@@ -89,8 +89,7 @@
                     <span>Code</span>
                   </a>
                 </span>
-
-            </div>
+              </div>
           </div>
         </div>
       </div>
@@ -112,6 +111,9 @@
           <img src="static/images/example.gif" alt="MY ALT TEXT"/>
         </center>
         
+        <h4 class="subtitle is-6 has-text-centered" style="margin-top: -1.5em; color: gray; font-size: small;"">
+             (Results on Stable Diffusion v1.5. Left: Baseline with 50 PLMS steps. Right: Apply DeepCache upon 50 PLMS steps) 
+        </h4>
       </div>
       
     </div>
@@ -136,6 +138,9 @@
             DeepCache capitalizes on the inherent temporal redundancy observed in the sequential denoising steps of diffusion models, which caches and retrieves features across adjacent denoising stages, thereby curtailing redundant computations. 
             Utilizing the property of the U-Net, we reuse the high-level features while updating the low-level features in a very cheap way. This innovative strategy, in turn, enables a speedup factor of 2.3X for Stable Diffusion v1.5 with only a 0.05 decline in CLIP Score, and 4.1X for LDM-4-G with a slight decrease of 0.22 in FID  on ImageNet. Our experiments also demonstrate DeepCache's superiority over existing pruning and distillation methods that necessitate retraining and its compatibility with current sampling techniques. Furthermore, we find that under the same throughput, DeepCache effectively achieves comparable or even marginally improved results with DDIM or PLMS.
           </p>
+          <p>
+            <b>Keywords: Diffusion Models, Training-free, Acceleration</b>
+          </p>
         </div>
       </div>
     </div>
@@ -153,7 +158,7 @@
       </div>
       
       <div class="columns is-centered has-text-centered" style="color: gray; font-size: small;">
-        <h4> (The original images are depicted in the upper line, while the images accelerated by DeepCache are shown in the lower line)</h4>
+        <h4> (The original images are depicted in the upper line, and the images accelerated by DeepCache are shown in the lower line)</h4>
       </div>
       <div id="results-carousel">
        <div class="item">
@@ -205,7 +210,7 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>BibTex Coming Soon</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -219,7 +224,7 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
