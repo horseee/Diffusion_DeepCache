@@ -133,5 +133,7 @@ body {
   font-size: smaller;
 }
 
-
-
+.inline { 
+  display: inline-block;
+  max-width: 33%;
+}
